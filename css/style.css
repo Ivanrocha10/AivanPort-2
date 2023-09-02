@@ -5,7 +5,7 @@
   text-decoration: none;
   border: none;
   outline: none;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -16,11 +16,9 @@
   --white-color: #fff;
   --cover-color: linear-gradient(45deg, #00abf0, #006e9a);
   --pages-color: linear-gradient(90deg, #fff, #ddd);
-  --border: .125rem solid #00abf0;
-  --box-shadow: 0 0 .6rem rgba(0, 0, 0, .2);
+  --border: 0.125rem solid #00abf0;
+  --box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.2);
 }
-
-
 
 body {
   display: flex;
@@ -30,7 +28,6 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
 }
-
 
 .wrapper {
   position: relative;
@@ -47,8 +44,8 @@ body {
   height: 100%;
   background: var(--cover-color);
   box-shadow: var(--box-shadow);
-  border-top-left-radius: .6rem;
-  border-bottom-left-radius: .6rem;
+  border-top-left-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
   transform-origin: right;
 }
 
@@ -56,11 +53,9 @@ body {
   z-index: -1;
 }
 
-
 .cover.cover-right.turn {
   transform: rotateY(180deg);
 }
-
 
 .book {
   position: relative;
@@ -74,7 +69,7 @@ body {
   width: 50%;
   height: 100%;
   background: var(--pages-color);
-  box-shadow: 0 0 .6rem rgba(0, 0, 0, .1);
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.1);
   display: flex;
   padding: 2rem;
 }
@@ -89,8 +84,8 @@ body {
 .profile-page img {
   max-width: 180px;
   border-radius: 50%;
-  border: .25rem solid var(--main-color);
-  margin-bottom: .8rem;
+  border: 0.25rem solid var(--main-color);
+  margin-bottom: 0.8rem;
 }
 
 .profile-page h1 {
@@ -104,7 +99,7 @@ body {
 }
 
 .profile-page .social-media {
-  margin: .6rem 0 .8rem;
+  margin: 0.6rem 0 0.8rem;
 }
 
 .profile-page .social-media a {
@@ -118,8 +113,8 @@ body {
   border-radius: 50%;
   font-size: 1.3rem;
   color: var(--main-color);
-  margin: 0 .2rem;
-  transition: .5rem;
+  margin: 0 0.2rem;
+  transition: 0.5rem;
 }
 
 .profile-page .social-media a:hover {
@@ -143,12 +138,12 @@ body {
   height: 3rem;
   background: var(--main-color);
   border: var(--border);
-  border-radius: .3rem;
+  border-radius: 0.3rem;
   font-size: 1rem;
   color: var(--white-color);
   font-weight: 500;
   margin: 0 1rem;
-  transition: .5s;
+  transition: 0.5s;
 }
 
 .btn:hover {
@@ -164,4 +159,63 @@ body {
 .btn-box .btn:nth-child(2):hover {
   background: var(--main-color);
   color: var(--white-color);
+}
+
+.book-page.page-right {
+  position: absolute;
+  right: 0;
+  transform-style: preserve-3d;
+}
+
+.book-page .page-front,
+.book-page .page-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--pages-color);
+  padding: 1.5rem 2rem;
+}
+
+.book-page .page-front {
+  transform: rotateY(0deg) translateZ(1px);
+}
+
+.book-page .page-back {
+  transform: rotateY(180deg) translateZ(1px);
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.workeduc-box {
+  border-left: var(--border);
+}
+
+.workeduc-box .workeduc-content {
+  position: relative;
+  padding-left: 1.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.workeduc-box .workeduc-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -0.65rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background: var(--main-color);
+  border-radius: 50%;
+}
+
+.workeduc-content .year {
+  color: var(--main-color);
+}
+
+.workeduc-content .year i {
+  margin-right: 0.4rem;
 }
