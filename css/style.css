@@ -28,6 +28,7 @@ body {
   background: var(--bg-color);
   color: var(--text-color);
   overflow: hidden;
+  zoom: 100%;
 }
 
 .wrapper {
