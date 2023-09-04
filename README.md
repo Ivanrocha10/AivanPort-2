@@ -16,7 +16,7 @@ O projeto AivanPort-2......
 
 - [Drive](https://drive.google.com/file/d/13scgacvFxoxpsrWEA4M7fFyJiz4QgTqz/view)
 - [Site](https://www.buymeacoffee.com/codehalyoutube)
-- [Youtube](https://youtu.be/kcw9hxYb53Q?list=PL85ITvJ7FLohAe8-BUtOOJ7xyz089SH4m)
+- [Youtube](https://www.youtube.com/@codehal)
 - [Ko-fi](https://ko-fi.com/codehal)
 - [Apoie](https://www.buymeacoffee.com/codehalYoutube/extras)
 
